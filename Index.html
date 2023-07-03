@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <div class="container mt-5">
+         
+        <form id="order-form">
+            <div class="form-group">
+                <label for="price">Choose Price:</label>
+                <input type="text" class="form-control" id="price" name="price">
+            </div>
+
+            <div class="form-group">
+                <label for="dish">Choose Dish:</label>
+                <input type="text" class="form-control" id="dish" name="dish">
+            </div>
+            <div class="form-group">
+                <label for="table">Choose Table:</label>
+                <select class="form-control" id="table" name="table">
+                    <option value="table1">Table 1</option>
+                    <option value="table2">Table 2</option>
+                    <option value="table3">Table 3</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="addBill()">Add Bill</button>
+            <h1>Order</h1> 
+            <div class="row">   
+                <div class="col">
+                    <h3>Table 1</h3>
+                    <ul class="list-unstyled" id="table1-list"></ul>
+                </div>
+                <div class="col">
+                    <h3>Table 2</h3>
+                    <ul class="list-unstyled" id="table2-list"></ul>
+                </div>
+                <div class="col">
+                    <h3>Table 3</h3>
+                    <ul class="list-unstyled" id="table3-list"></ul>
+                </div>
+        </form>
+    </div> 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="CRUD.JS"></script>
+</body>
+</html>
+
